@@ -52,5 +52,4 @@ function render(r) {
 const ta = document.getElementById('in');
 document.getElementById('go').onclick = () => render(parse(ta.value));
 document.getElementById('sample').onclick = () => { ta.value = SAMPLE; render(parse(SAMPLE)); };
-document.getElementById('copy').onclick = () => navigator.clipboard.writeText(window._md || '');
 if (location.search.includes('demo')) document.getElementById('sample').click();
